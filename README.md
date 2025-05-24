@@ -5,15 +5,15 @@ The goal of this project was to implement a prototype web application of REST se
 3) Sales Bounded Context
 4) Analytics Bounded Context
 
-The prototype web application has a typical multi-tier architecture: <br />
-IMAGE
-<br />
+The prototype web application has a typical multi-tier architecture: 
+<br /> <br />
+<img width="195" alt="architecture" src="https://github.com/user-attachments/assets/bac06476-af50-42c7-8a93-4af03c5f25e9" />
+
 It was also developed with:
 1) **Event-driven architecture:** Some microservices publish events, which are subscribed by other microservices.
 2) **Stream processing:** The Analytics microservice reads the event streams, processes those streams with the stream processing technique, and accepts SQL-style queries on those streams as shown below:
+<img width="382" alt="stream_processing" src="https://github.com/user-attachments/assets/8c17aebf-2368-4503-b2f8-1c8d767dad09" />
 
-IMAGE
-<br />
 This prototype is implemented with the Spring Boot framework with the following dependencies: Spring Web, Spring Data JPA, H2. The Java version is JDK 11.
 
 ## Running Kafka:
